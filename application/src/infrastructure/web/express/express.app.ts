@@ -1,9 +1,9 @@
 import express, { Application } from 'express';
-import { orderRoutes } from '@infrastructure/web/express/routes/order.routes';
+import userRouter from '../routes/user.routes';
 
 const createExpressApp = (app: Application): void => {
   app.use(express.json());
-  app.use('/orders', orderRoutes);
+  app.use('/api', userRouter);
 };
 
 export { createExpressApp };

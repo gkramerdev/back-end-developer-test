@@ -1,7 +1,7 @@
 import express from 'express';
-import { createExpressApp } from '@infrastructure/web/express/express.app';
-import { DatabaseConnect } from '@infrastructure/database/connection/database.connect';
-import { Config } from '@infrastructure/configuration/env/dotenv.config';
+import { createExpressApp } from '../../web/express/express.app';
+import { DatabaseConnect } from '../../database/connection/database.connect';
+import { Config } from '../env/dotenv.config';
 
 const app = express();
 
